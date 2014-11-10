@@ -1,5 +1,5 @@
 
- /* Basado en el codigo de Fernanda Martinez y Adrian Martinez
+ /* /Basado en el codigo de Fernanda Martinez y Adrian Martinez
  */
 
 package hojadetrabajo9.newpackage;
