@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 public class Floyd {
     
     BuscarArchivo archivo= new BuscarArchivo();
-    InterfazGrafo interfaz;
+    public InterfazGrafo interfaz;
     int[][] P;
     int[] max;
     int centro;
