@@ -32,6 +32,7 @@ public class Floyd {
         
         try 
         {
+            
             archivo.obtenerArchivo("/home/eldonmoi/Desktop/HojaDeTrabajo9/src/hojadetrabajo9/datos.txt");
             archivo.arregloDeNombres(); // Nombre de los nodos
             interfaz = archivo.matrizDeCostos(); // Peso de los arcos entre nodos
