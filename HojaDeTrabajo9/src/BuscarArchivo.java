@@ -70,7 +70,7 @@ public class BuscarArchivo
         filereader = new FileReader (archivo);
         bufferedreader = new BufferedReader(filereader);
         String linea;
-
+        //SE lee el archivo
         while((linea=bufferedreader.readLine())!=null)
         {
             String[] tmp;
