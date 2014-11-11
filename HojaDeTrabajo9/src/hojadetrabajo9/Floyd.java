@@ -7,6 +7,7 @@ package hojadetrabajo9;
 
 import java.io.IOException;
 import javax.swing.JOptionPane;
+import java.util.*;
 
 /**
  * Esta clase se utiliza para ejecutar el algoritmo de Floyd
@@ -22,6 +23,7 @@ public class Floyd {
     int[] max;
     int centro;
     int minimo=10000;
+    String direccion;
     
     /**
      * Nombre: Floyd
@@ -32,8 +34,8 @@ public class Floyd {
         
         try 
         {
-            
-            archivo.obtenerArchivo("/home/eldonmoi/Desktop/HojaDeTrabajo9/src/hojadetrabajo9/datos.txt");
+            direccion = JOptionPane.showInputDialog("Ingrese la direccion del archivo de texto. Ejemplo: /home/eldonmoi/Desktop/HojaDeTrabajo9/src/hojadetrabajo9/datos.txt" );
+            archivo.obtenerArchivo(direccion);
             archivo.arregloDeNombres(); // Nombre de los nodos
             interfaz = archivo.matrizDeCostos(); // Peso de los arcos entre nodos
             P = new int[25][25]; // Matriz de nodos intermedios
